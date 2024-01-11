@@ -1,0 +1,71 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: rgb(222, 210, 187);
+}
+
+.header {
+  background: rgb(155, 141, 119);
+  text-align: center;
+}
+
+.footer {
+  background: rgb(155, 141, 119);
+  display: flex;
+  position: static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  text-align: center;
+}
+
+/* Formulärcontainer */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(45, 45, 45, 0.9));
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Formuläretiketter */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333; /* Färg för etiketter, justera efter behov */
+}
+
+/* Textfält och textområde */
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc; /* Justera gränsfärgen efter behov */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Knappstil */
+button {
+  background-color: #3498db; /* Färg för knappen, justera efter behov */
+  color: #fff; /* Textfärg för knappen, justera efter behov */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Ändra färgen på knappen vid hover */
+button:hover {
+  background-color: #2e86c1; /* Justera hover-färgen efter behov */
+}/*# sourceMappingURL=styles.css.map */
