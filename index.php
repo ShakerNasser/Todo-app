@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,14 @@
 <body>
 
 <header> 
-<h1 class="header"> ToDo-App </h1>
+    <h1 class="header"> ToDo-App </h1>
 </header>
 
 <?php
-// Hämta uppgifter från databasen
-// $sql = "SELECT * FROM tasks";
-// $result = $conn->query($sql);
+include 'setup.php'; // Byt ut till ditt filnamn för databasanslutningen
+
+$sql = "SELECT * FROM tasks";
+$result = $conn->query($sql);
 
 // if ($result->num_rows > 0) {
 //     echo "<ul>";
@@ -28,17 +29,15 @@
 // }
 // ?>
 
+<main class="main-section"> 
+    <form action="create.php" method="post">
+        <label for="title">Add task:</label>
+        <input type="text" name="title" required>
+        <button type="submit">Create task</button>
+    </form>
+</main>
 
-<form action="add_task.php" method="post">
-    <label for="title">Add task:</label>
-    <input type="text" name="title" required>
-    <label for="description"> Describe the task:</label>
-    <textarea name="description"></textarea>
-    <button type="submit">Create task</button>
-</form>
-
-
-<Footer class="footer"> Shaker Nasser - Chas Academy 2024 </Footer>
+<Footer class="footer"> <h6> Shaker Nasser - Chas Academy 2024  </h6></Footer>
 
 </body>
 </html>

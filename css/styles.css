@@ -11,19 +11,34 @@ body {
 }
 
 .header {
-  background: rgb(155, 141, 119);
+  background: linear-gradient(rgb(236, 203, 139), rgb(155, 141, 119));
   text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid #ff8d69; /* Understreck för extra pop! Justera färgen efter behov */
+  color: #fff; /* Textfärg för kontrast mot bakgrunden, justera efter behov */
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+/* Antag att detta är din huvudsektion (header och innehåll) */
+.main-section {
+  padding-bottom: 100px; /* Justera avståndet enligt ditt behov */
 }
 
 .footer {
-  background: rgb(155, 141, 119);
-  display: flex;
-  position: static;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 25px;
+  background: linear-gradient(rgb(236, 203, 139), rgb(155, 141, 119));
   text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid #ff8d69; /* Understreck för extra pop! Justera färgen efter behov */
+  color: #fff; /* Textfärg för kontrast mot bakgrunden, justera efter behov */
+}
+
+.footer h6 {
+  font-size: 1em;
+  margin: 10px 0;
 }
 
 /* Formulärcontainer */
