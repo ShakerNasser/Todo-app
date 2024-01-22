@@ -39,6 +39,7 @@ body{
     padding: 20px;
     border-bottom: 5px solid #ff8d69; /* Understreck för extra pop! Justera färgen efter behov */
     color: #fff; /* Textfärg för kontrast mot bakgrunden, justera efter behov */
+    margin-top: 230px;
 }
 
 .footer h6 {
@@ -47,13 +48,14 @@ body{
 }
 
 /* Formulärcontainer */
-form {
+.form-1 {
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
     background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(45, 45, 45, 0.9));
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 65px;
 }
 
 /* Formuläretiketter */
@@ -72,17 +74,6 @@ textarea {
     border: 1px solid #ccc; /* Justera gränsfärgen efter behov */
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-/* Knappstil */
-button {
-    background-color: #3498db; /* Färg för knappen, justera efter behov */
-    color: #fff; /* Textfärg för knappen, justera efter behov */
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 table {
@@ -105,15 +96,29 @@ table tr:nth-child(even) {
     background-color:  rgb(222, 210, 187);
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.form-button {
+  background-color: #4CAF50;
+color: white;
+padding: 8px 12px;
+border: none;
+ border-radius: 4px;
+cursor: pointer;
+ transition: background-color 0.3s;
 }
+
+
+// button.update, button.delete{
+//     background-color: #4CAF50;
+//     color: white;
+//     padding: 8px 12px;
+//     border: none;
+//      border-radius: 4px;
+//     cursor: pointer;
+//      transition: background-color 0.3s;
+//      display: flex;
+//      gap: 10px;
+
+// }
 
 button.delete {
     background-color: #f44336;
@@ -127,7 +132,27 @@ button.delete:hover {
     background-color: #d32f2f;
 }
 
-/* Style checkbox */
-input[type="checkbox"] {
-    margin-right: 5px;
+.button.update,
+.button.delete,
+.action-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+// /* Style checkbox */
+// input[type="checkbox"] {
+//     margin-right: 5px;
+// }
+
+
+.no-tasks{
+
+text-align: center;
 }
