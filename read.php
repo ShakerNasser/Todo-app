@@ -1,6 +1,6 @@
 <?php
 
-include ("setup.php");
+include("setup.php");
 
 function getTasks($conn) {
     $tasks = [];
@@ -15,5 +15,4 @@ function getTasks($conn) {
 
     return $tasks;
 }
-
 ?>

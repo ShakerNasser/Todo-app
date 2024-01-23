@@ -7,19 +7,16 @@
   font-family: "poppins", sans-serif;
 }
 
-body{
-
+body {
     background: rgb(222, 210, 187);
-
-
 }
 
 .header {
     background: linear-gradient(rgb(236, 203, 139), rgb(155, 141, 119));
     text-align: center;
     padding: 20px;
-    border-bottom: 5px solid #ff8d69; /* Understreck för extra pop! Justera färgen efter behov */
-    color: #fff; /* Textfärg för kontrast mot bakgrunden, justera efter behov */
+    border-bottom: 5px solid #ff8d69;
+    color: #fff;
 }
 
 .header h1 {
@@ -27,18 +24,16 @@ body{
     margin: 10px 0;
 }
 
-/* Antag att detta är din huvudsektion (header och innehåll) */
 .main-section {
-    padding-bottom: 100px; /* Justera avståndet enligt ditt behov */
+    padding-bottom: 100px;
 }
-
 
 .footer {
     background: linear-gradient(rgb(236, 203, 139), rgb(155, 141, 119));
     text-align: center;
     padding: 20px;
-    border-bottom: 5px solid #ff8d69; /* Understreck för extra pop! Justera färgen efter behov */
-    color: #fff; /* Textfärg för kontrast mot bakgrunden, justera efter behov */
+    border-bottom: 5px solid #ff8d69;
+    color: #fff;
     margin-top: 230px;
 }
 
@@ -47,7 +42,6 @@ body{
     margin: 10px 0;
 }
 
-/* Formulärcontainer */
 .form-1 {
     max-width: 400px;
     margin: 20px auto;
@@ -58,20 +52,18 @@ body{
     margin-top: 65px;
 }
 
-/* Formuläretiketter */
 label {
     display: block;
     margin-bottom: 8px;
-    color: #333; /* Färg för etiketter, justera efter behov */
+    color: #333;
 }
 
-/* Textfält och textområde */
 input[type="text"],
 textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
-    border: 1px solid #ccc; /* Justera gränsfärgen efter behov */
+    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -89,36 +81,48 @@ table th, table td {
 }
 
 table th {
-    background-color:  rgb(210, 169, 92);
+    background-color: rgb(210, 169, 92);
 }
 
 table tr:nth-child(even) {
-    background-color:  rgb(222, 210, 187);
+    background-color: rgb(222, 210, 187);
 }
 
 .form-button {
-  background-color: #4CAF50;
-color: white;
-padding: 8px 12px;
-border: none;
- border-radius: 4px;
-cursor: pointer;
- transition: background-color 0.3s;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.update-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(45, 45, 45, 0.9));
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 65px;
+}
 
-// button.update, button.delete{
-//     background-color: #4CAF50;
-//     color: white;
-//     padding: 8px 12px;
-//     border: none;
-//      border-radius: 4px;
-//     cursor: pointer;
-//      transition: background-color 0.3s;
-//      display: flex;
-//      gap: 10px;
+.update-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
 
-// }
+.update-form input[type="text"],
+.update-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
 button.delete {
     background-color: #f44336;
@@ -144,15 +148,21 @@ button.delete:hover {
     transition: background-color 0.3s;
 }
 
+.button.update:hover,
+.button.delete:hover,
+.action-button:hover {
+    background-color: #45a049;
+}
 
+.button.delete:hover {
+    background-color: #d32f2f;
+}
 
-// /* Style checkbox */
-// input[type="checkbox"] {
-//     margin-right: 5px;
-// }
+.no-tasks {
+    text-align: center;
+}
 
-
-.no-tasks{
-
-text-align: center;
+.action-buttons-container {
+    display: flex;
+    gap: 10px; /* Justera detta värde för önskat mellanrum mellan knapparna */
 }
