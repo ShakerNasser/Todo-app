@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':title', $title, PDO::PARAM_STR);
         $stmt->bindParam(':description', $description, PDO::PARAM_STR);
         $stmt->execute();
-        header("Location: index.php"); // Omdirigera tillbaka till huvudsidan
+        header("Location: index.php"); // redirect back do index.php 
     } catch (PDOException $e) {
         echo "Error creating task: " . $e->getMessage();
     }

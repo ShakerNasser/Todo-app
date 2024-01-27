@@ -48,7 +48,7 @@
                 echo "</form>";
                 echo "</td>";
                 echo "<td class='action-buttons-container'>";
-                echo "<form action='index.php' method='post'>";
+                echo "<form action='update.php' method='post'>";
                 echo "<input type='hidden' name='taskId' value='{$task['id']}'>";
                 echo "<button type='submit' id ='button-update'class='action-button update' name='action' value='update'>Update</button></form>";
                 echo "<form action='delete.php' method='post'>";
@@ -81,7 +81,7 @@
                 exit();
             }
 
-            // Visar formuläret för att uppdatera uppgiften
+            // Showing the form for update function 
             echo "<form action='update.php' method='post' class='update-form'>";
             echo "<input type='hidden' name='taskId' value='{$task['id']}'>";
             echo "<label for='newTitle'>New Task title:</label>";

@@ -13,20 +13,15 @@ Task Management requirements:
 - [x]  Update (involves the ability to modify task information) - update.php file
 - [x]  Delete - in a delete.php file 
 - [x]  Mark a task as completed - in mark_complete.php file 
-
 - [x]  Setup.php - connecting the database using PDO 
 - [x]  index.php - the home page of the todo.app, with forms and actions. 
-
 
 Database in adminer (MariaDB) inserted into folder .devcontainer --> init.sql file. 
 
 To open the project:
-- Clone the repoistory 
+- Clone the repository 
 - Start the docker desktop
 - Reopen the project in devcontainer
 - Run 'php -S localhost:8000' in bash terminal and select the open in browser option.
 
-To check the database:
-- Go to port 80:80 
-- login into adminer with the passwords in the .devcontainer folder
-- Select 'tasks' database
+Student: Shaker Nasser - Chas Academy 2024 

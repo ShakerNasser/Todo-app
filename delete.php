@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         $conn->exec($sql);
-        header("Location: index.php"); // Omdirigera tillbaka till huvudsidan
+        header("Location: index.php"); // redirect back to the index.php 
     } catch (PDOException $e) {
         echo "Error deleting task: " . $e->getMessage();
     }
