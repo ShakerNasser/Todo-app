@@ -1,9 +1,9 @@
 <?php
 include 'setup.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['taskId']) && isset($_POST['isCompleted'])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['taskId'])) {
     $taskId = $_POST['taskId'];
-    $isCompleted = $_POST['isCompleted'];
+    $isCompleted = isset($_POST['isCompleted']) ? $_POST['isCompleted'] : 0;
 
     // Uppdatera is_completed i databasen
     $updateQuery = "UPDATE tasks SET is_completed = :isCompleted WHERE id = :taskId";
@@ -14,5 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['taskId']) && isset($_P
 
     // Omdirigera tillbaka till index.php efter uppdatering
     header("Location: index.php");
+    exit(); // Lägg till detta för att avsluta scriptet efter omdirigering
 }
+
 ?>

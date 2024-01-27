@@ -67,7 +67,7 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'update' && isset($_POST['taskId'])) {
             $taskId = $_POST['taskId'];
 
-            // Hämta uppgiftsdata från databasen baserat på id
+            // Fetch task data from database based on id
             $selectQuery = "SELECT * FROM tasks WHERE id = :taskId";
             $stmt = $conn->prepare($selectQuery);
             $stmt->bindParam(':taskId', $taskId, PDO::PARAM_INT);
@@ -96,7 +96,9 @@
     </main>
 
     <footer class="footer">
+        <div>
         <h6> Shaker Nasser - Chas Academy 2024 </h6>
+        </div>
     </footer>
 
 </body>

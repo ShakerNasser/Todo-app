@@ -17,5 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['taskId']) && isset($_P
 
     // Omdirigera tillbaka till index.php efter uppdatering
     header("Location: index.php");
+    exit();
 }
 ?>
